@@ -1,0 +1,51 @@
+================================================================================
+                       ACTIVE DIRECTORY AUDIT REPORT                            
+================================================================================
+Generated: 2025-10-14 06:00:00
+Domain: techcorp.local
+Export Date: 10/14/2025 06:00:00
+
+EXECUTIVE SUMMARY
+--------------------------------------------------------------------------------
+CRITICAL: 3 accounts expiring within 30 days
+WARNING:  7 users haven't logged in for 30+ days
+WARNING:  4 computers not seen for 30+ days
+SECURITY: 11 users with passwords older than 90 days (where passwordNeverExpires = false)
+
+INACTIVE USERS (No login > 30 days)
+--------------------------------------------------------------------------------
+test_user    Test User              IT           Datacenter    120 days  enabled=False
+admin_backup Backup Admin Account   IT           Datacenter    105 days  enabled=False
+nnils        Nils Nilsson           Operations   Lager          59 days  enabled=True
+eolsson      Erik Olsson            Sales        Huvudkontor    59 days  enabled=True
+mberg        Maria Berg             Finance      Kontor Malmö   54 days  enabled=True
+jsvensson    Johan Svensson         Operations   Lager          49 days  enabled=True
+qquentin     Quentin Quentinsson    Sales        Kontor Malmö   42 days  enabled=True
+
+USERS PER DEPARTMENT
+--------------------------------------------------------------------------------
+Finance        :   5
+HR             :   3
+IT             :  10
+Management     :   3
+Operations     :   5
+Sales          :   5
+
+COMPUTERS BY OPERATING SYSTEM
+--------------------------------------------------------------------------------
+Windows 11 Pro           :  10
+Windows 10 Pro           :   4
+Windows Server 2022      :   3
+Windows 10 Enterprise    :   1
+Windows 11 Enterprise    :   1
+Windows Server 2019      :   1
+
+EXPIRING ACCOUNTS (<=30 days)
+--------------------------------------------------------------------------------
+test_user    Test User              expires=2025-10-15 daysLeft=0
+jjohan       Johan Johansson        expires=2025-10-30 daysLeft=15
+eerik        Erik Eriksson          expires=2025-11-01 daysLeft=17
+
+================================================================================
+                                RAPPORT SLUT                                    
+================================================================================
